@@ -4,7 +4,12 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans 3", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	text-shadow: 1px 1px 2px rgb(43, 42, 42);
 }
 
 .paticka {
@@ -33,3 +38,186 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+.paticka p {
+	text-shadow: none;
+}
+
+h1,
+h2 {
+	font-family: "Raleway", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+.hlavni {
+	background-image: url(images/salat.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 200px;
+	padding: 10px;
+	
+}
+
+.salaty {
+	display: flex;
+	justify-content: space-between;
+}
+
+.maly1 {
+	background-image: url(images/chlebicek.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 90px;
+	padding: 10px;
+}
+
+.svacina {
+	display: flex;
+	justify-content: space-between;
+}
+
+.maly2 {
+	background-image: url(images/cizrna.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 90px;
+	padding: 10px;
+}
+
+.mexicka {
+	display: flex;
+	justify-content: space-between;
+}
+
+.maly3 {
+	background-image: url(images/tacos.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 90px;
+	padding: 10px;
+}
+
+.lusteniny {
+	display: flex;
+	justify-content: space-between;
+}
+
+.maly4 {
+	background-image: url(images/burger.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 90px;
+	padding: 10px;
+}
+
+.burgery {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (min-width: 480px) {
+	.nabidka {
+		display: flex;
+		flex-wrap: wrap;
+		
+
+	}
+
+	.hlavni {
+		flex: 0 0 100%;
+		min-height: 250px;
+		padding: 20px;
+	}
+
+	.malerecepty {
+		flex: 1 1 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.maly1,
+	.maly2,
+	.maly3,
+	.maly4 {
+		flex: 1 1 50%;
+		min-height: 150px;
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	
+}
+
+
+@media screen and (min-width: 860px) {
+	.nabidka {
+		flex-wrap: nowrap;
+	}
+
+	.hlavni {
+		flex: 1 1 calc(100% / 3);
+		min-height: 400px;
+	}
+
+
+
+	.malerecepty {
+		flex: 1 1 calc(100% / 3 × 2);
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.maly1,
+	.maly2,
+	.maly3,
+	.maly4 {
+		flex-basis: 50%;
+		min-height: 200px;
+	}
+	h1 {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+}
+
+
+
+
+
+
+
