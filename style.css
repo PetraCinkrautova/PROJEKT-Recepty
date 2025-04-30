@@ -49,6 +49,7 @@ h2 {
 	font-optical-sizing: auto;
 	font-weight: 800;
 	font-style: normal;
+	margin: 0;
 }
 
 h1 {
@@ -59,8 +60,12 @@ h2 {
 	font-size: 18px;
 }
 
+p {
+	margin: 0;
+}
+
 .hlavni {
-	background-image: url(images/salat.jpg);
+	background-image: url(images/salat.jpg), linear-gradient(to left, rgba(3, 3, 3, 0.5));
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
@@ -69,6 +74,7 @@ h2 {
 	justify-content: space-between;
 	min-height: 200px;
 	padding: 10px;
+	border: 1px solid white;
 	
 }
 
@@ -78,7 +84,7 @@ h2 {
 }
 
 .maly1 {
-	background-image: url(images/chlebicek.jpg);
+	background-image: url(images/chlebicek.jpg), linear-gradient(to left, rgba(3, 3, 3, 0.7));
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
@@ -87,6 +93,7 @@ h2 {
 	justify-content: space-between;
 	min-height: 90px;
 	padding: 10px;
+	border: 1px solid white;
 }
 
 .svacina {
@@ -95,7 +102,7 @@ h2 {
 }
 
 .maly2 {
-	background-image: url(images/tacos.jpg);
+	background-image: url(images/tacos.jpg), linear-gradient(to left, rgba(3, 3, 3, 0.5));
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
@@ -104,6 +111,7 @@ h2 {
 	justify-content: space-between;
 	min-height: 90px;
 	padding: 10px;
+	border: 1px solid white;
 }
 
 .mexicka {
@@ -112,7 +120,7 @@ h2 {
 }
 
 .maly3 {
-	background-image: url(images/cizrna.jpg);
+	background-image: url(images/cizrna.jpg), linear-gradient(to left, rgba(3, 3, 3, 0.5));
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
@@ -121,6 +129,7 @@ h2 {
 	justify-content: space-between;
 	min-height: 90px;
 	padding: 10px;
+	border: 1px solid white;
 }
 
 .lusteniny {
@@ -129,7 +138,7 @@ h2 {
 }
 
 .maly4 {
-	background-image: url(images/burger.jpg);
+	background-image: url(images/burger.jpg), linear-gradient(to left, rgba(3, 3, 3, 0.5));
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
@@ -138,6 +147,7 @@ h2 {
 	justify-content: space-between;
 	min-height: 90px;
 	padding: 10px;
+	border: 1px solid white;
 }
 
 .burgery {
@@ -189,14 +199,14 @@ h2 {
 	}
 
 	.hlavni {
-		flex: 1 1 calc(100% / 3);
+		flex: 0 0 calc(100% / 3);
 		min-height: 400px;
 	}
 
 
 
 	.malerecepty {
-		flex: 1 1 calc(100% / 3 × 2);
+		flex: 0 0 76.666;
 		display: flex;
 		flex-wrap: wrap;
 	}
